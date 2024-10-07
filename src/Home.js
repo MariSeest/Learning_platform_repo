@@ -10,7 +10,7 @@ function Home() {
     };
     return(
         <div>
-            <h1>
+            <h1 className="header">
                 Benvenuto nella piattaforma di prenotazione Pasti
             </h1>
             <button className="center-button" onClick={handleNavigation}>

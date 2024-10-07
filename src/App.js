@@ -3,16 +3,10 @@ import React from 'react';
 import './app.css';
 import Home from './Home';
 import PrenotazionePasti from './PrenotazionePasti';
-import sfondo from './assets/PrenotazionePasti.jpg';
 
 function App() {
     return (
-        <div style={{
-            backgroundImage: `url(${sfondo})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            height: '100vh'
-        }}>
+        <div>
             <Router>
                 <Routes>
                     <Route path="/" element={<Home />} />

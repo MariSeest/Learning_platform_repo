@@ -45,5 +45,9 @@ button:focus {
 .center-button:focus {
     outline: none;
 }
+
+.header {
+    text-align: center;
+}
   
   
