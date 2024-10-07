@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import {withAuthenticationRequired} from "@auth0/auth0-react";
 
 function MenuPage() {
     const [menu, setMenu] = useState([]);

@@ -1,8 +1,9 @@
-import React from 'react';
-import './Home.css';
 import { useNavigate } from 'react-router-dom';
+import {withAuthenticationRequired} from "@auth0/auth0-react";
+import React from 'react';
 import './App.js';
 import './app.css';
+import './Home.css';
 
 
 function PrenotazionePasti() {

@@ -2,17 +2,21 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import React from 'react';
 import './app.css';
 import Home from './Home';
+import LoginButton from './Login';
 import PrenotazionePasti from './PrenotazionePasti';
+import {useAuth0} from "@auth0/auth0-react";
+import PageLoader from "./components/page-loader";
+import {AuthenticationGuard} from "./components/authentication-guard";
 
 function App() {
+    const {isLoading} =useAuth0();
+    if (isLoading) return <div><PageLoader/></div>;
     return (
         <div>
-            <Router>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/PrenotazionePasti" element={<PrenotazionePasti />} />
+                    <Route path="/" element={<AuthenticationGuard component = {Home} />}/>
+                    <Route path="/PrenotazionePasti" element={<AuthenticationGuard component = {PrenotazionePasti} />}/>
                 </Routes>
-            </Router>
         </div>
     );
 }
