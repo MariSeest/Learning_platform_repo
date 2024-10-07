@@ -14,7 +14,7 @@ function PrenotazionePasti() {
 
     return (
         <div>
-            <h1>Pagina di Prenotazione dei Pasti</h1>
+            <h1 className="header">Pagina di Prenotazione dei Pasti</h1>
             <button className="center-button" onClick={handleNavigation}>
                 Vai a Home
             </button>
