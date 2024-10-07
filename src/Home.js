@@ -6,10 +6,10 @@ import {useAuth0} from '@auth0/auth0-react';
 
 function Home() {
     const navigate = useNavigate();
-    const { user,isAuthenticated, isLoading } = useAuth0;
+    const { user,isAuthenticated, isLoading } = useAuth0();
 
     const handleSubmit = (event) => {
-        event.preventDefault(); // Evita il comportamento di default del form (es. refresh pagina)
+        event.preventDefault();
         console.log("Form submitted");
     };
 
