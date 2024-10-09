@@ -16,8 +16,8 @@ export const Auth0ProviderWithNavigate=({children}) => {
     }
     return(
         <Auth0Provider
-            domain="dev-ry60461345n1hsy0.eu.aut0.com"
-            clientId="FdRy45esrjzTtfxh6x7oF0VJqsets7w"
+            domain="dev-ffxgxtpwf845nujj.us.auth0.com"
+            clientId="utXag4p31DK4IkCsIrQap2HMzuePtmF8"
             authorizationParams={{
                 redirect_uri: redirectUri,
             }}

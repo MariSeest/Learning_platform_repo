@@ -1,0 +1,14 @@
+.header {
+    position: relative;
+    font-size: 2rem;
+    padding-right: 50px;
+}
+
+
+.menu-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    font-size: 4cm;
+}
+

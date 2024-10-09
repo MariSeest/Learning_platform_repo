@@ -1,0 +1,31 @@
+.center-button {
+    display: block;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.header-login {
+    text-align: center;
+    display: block;
+    color: white;
+    background-color: brown;
+    padding: 20px;
+    font-size: 2em;
+    margin-bottom: 40px;
+    margin-top:auto;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}

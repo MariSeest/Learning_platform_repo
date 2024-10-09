@@ -4,6 +4,7 @@ import React from 'react';
 import './App.js';
 import './app.css';
 import './Home.css';
+import MenuIcon from '@mui/icons-material/Menu';
 
 
 function PrenotazionePasti() {
