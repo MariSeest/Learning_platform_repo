@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './App.js';
 import './app.css';
@@ -8,15 +8,20 @@ import MenuIcon from '@mui/icons-material/Menu';
 import IconButton from '@mui/material/IconButton';
 import './icons.css';
 import './Login';
+import Sidebar from './SideBar';
 
 function Home() {
     const navigate = useNavigate();
     const { user, isAuthenticated, isLoading } = useAuth0();
-
+    const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const toggleSidebar = () => {
+        setSidebarOpen(!isSidebarOpen);
+    };
 
     const handleNavigation = () => {
         navigate('/prenotazionepasti');
     };
+
 
     if (isLoading) return <div>Loading...</div>;
 
@@ -27,6 +32,7 @@ function Home() {
                     Piattaforma di prenotazione Pasti
                     <IconButton
                         aria-label="menu"
+                        onClick={toggleSidebar}
                         style={{
                             position: 'absolute',
                             right: 0,
@@ -37,6 +43,7 @@ function Home() {
                         }}>
                         <MenuIcon style={{ fontSize: 'inherit' }} />
                     </IconButton>
+                    <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
                 </h1>
 
                 <button className="center-button" onClick={handleNavigation}>
