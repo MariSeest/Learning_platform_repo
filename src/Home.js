@@ -29,7 +29,7 @@ function Home() {
         isAuthenticated && (
             <div>
                 <h1 className="header" style={{ position: 'relative', textAlign: 'center' }}>
-                    Piattaforma di prenotazione Pasti
+                    Prenotazione Pasti
                     <IconButton
                         aria-label="menu"
                         onClick={toggleSidebar}

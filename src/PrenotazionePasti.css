@@ -1,17 +1,55 @@
-.principal-text{
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    display: block;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 20px 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    justify-content: center;
+.container {
+    max-width: 800px; /* Larghezza massima del contenitore */
+    margin: 0 auto; /* Centra il contenitore */
+    padding: 20px;
+    background-color: #f9f9f9; /* Colore di sfondo chiaro */
+    border-radius: 8px; /* Bordo arrotondato */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombra leggera */
 }
 
-.header{
+.header {
     text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em; /* Dimensione del font per il titolo */
+    color: #333; /* Colore del titolo */
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Linea separatrice tra gli elementi del menù */
+}
+
+.menu-label {
+    cursor: pointer; /* Indica che il label è cliccabile */
+    display: flex; /* Per allineare il checkbox e il testo */
+    align-items: center;
+}
+
+.menu-label input {
+    margin-right: 10px; /* Spazio tra checkbox e testo */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Spaziatura tra i bottoni */
+    margin-top: 20px;
+}
+
+.center-button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Colore di sfondo blu */
+    color: white; /* Colore del testo */
+    border: none; /* Nessun bordo */
+    border-radius: 5px; /* Bordo arrotondato */
+    cursor: pointer; /* Cursore a mano quando passa sopra il bottone */
+    transition: background-color 0.3s; /* Transizione per l'effetto hover */
+}
+
+.center-button:hover {
+    background-color: #0056b3; /* Colore al passaggio del mouse */
 }

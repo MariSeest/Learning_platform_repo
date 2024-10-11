@@ -8,10 +8,15 @@ import PrenotazionePasti from './PrenotazionePasti';
 import {useAuth0} from "@auth0/auth0-react";
 import PageLoader from "./components/page-loader";
 import {AuthenticationGuard} from "./components/authentication-guard";
+import {Contacts} from "@mui/icons-material";
+import Pastiprenotatiprecedenza from "./Pastiprenotatiprecedenza";
+import ContactsForm from "./ContactsForm";
+import MenuPage from './MenuPage';
 
 function App() {
     const {isLoading} =useAuth0();
-    if (isLoading) return <div><PageLoader/></div>;
+    if (isLoading) return
+    <div><PageLoader/></div>;
     return (
         <div>
                 <Routes>
@@ -20,6 +25,9 @@ function App() {
                     <Route path="/logout" element={<AuthenticationGuard component={LogoutButton} />} />
                     <Route path="/PrenotazionePasti" element={<AuthenticationGuard component = {PrenotazionePasti} />}/>
                     <Route path="/login" element={<AuthenticationGuard component = {LoginButton} />}/>
+                    <Route path="/Pastiprenotatiprecedenza" element={<AuthenticationGuard component = {Pastiprenotatiprecedenza} />}/>
+                    <Route path="/ContactsForm" element={<AuthenticationGuard component = {ContactsForm} />}/>
+                    <Route path="/MenuPage" element={<AuthenticationGuard component = {MenuPage} />}/>
                 </Routes>
         </div>
     );

@@ -19,7 +19,7 @@ function MenuPage() {
 
     const handleOrder = () => {
         axios.post('/order', {
-            userId: 1, // Supponiamo l'utente loggato abbia id 1
+            userId: 1, // Supponiamo che l'utente loggato abbia id 1
             menuItemId: order.menuItemId,
             quantity: order.quantity
         })
